@@ -28,8 +28,6 @@ const currentHoverRating = ref(0)
 const handleEvent = event => {
   const starRating = parseInt(event.target.dataset.star)
 
-  if (!starRating) return
-
   switch (event.type) {
     case "click":
       if (starRating) {
